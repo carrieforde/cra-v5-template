@@ -18,9 +18,12 @@
     "start": "react-scripts start",
     "test": "react-scripts test --watchAll=false --maxWorkers=50% --coverage --testResultsProcessor jest-sonar-reporter",
     "test:ci": "react-scripts test --watchAll=false --maxWorkers=2 --coverage --testResultsProcessor jest-sonar-reporter",
-    "test:watch": "react-scripts test --watch --maxWorkers=25%"
+    "test:watch": "react-scripts test --watch --maxWorkers=25%",
+    "prepare": "husky install"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
     "@lhci/cli": "^0.8.2",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
@@ -32,7 +35,7 @@
     "@types/react": "^17.0.20",
     "@types/react-dom": "^17.0.9",
     "eslint-config-prettier": "^8.3.0",
-    "husky": "^7.0.0",
+    "husky": "^8.0.0",
     "hygen": "^6.1.0",
     "jest-sonar-reporter": "^2.0.0",
     "lint-staged": "^12.1.2",
@@ -52,6 +55,8 @@
     "@mui/material": "^5.2.4",
     "@mui/styles": "^5.2.3",
     "classnames": "^2.3.1",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
     "dayjs": "^1.10.7",
     "lodash": "^4.17.21",
     "react": "^17.0.2",
@@ -74,9 +79,9 @@
       "last 1 safari version"
     ]
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
     }
   },
   "lint-staged": {
