@@ -3,7 +3,7 @@ import App from "./App";
 
 describe("App", () => {
   it("should render the App component consistently", () => {
-    const { container } = render(<App />);
-    expect(container).toMatchSnapshot();
+    const { asFragment } = render(<App />);
+    expect(asFragment()).toMatchSnapshot();
   });
 });

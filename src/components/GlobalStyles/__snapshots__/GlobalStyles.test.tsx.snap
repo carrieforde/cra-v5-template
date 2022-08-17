@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GlobalStyles should render the global styles 1`] = `<DocumentFragment />`;
