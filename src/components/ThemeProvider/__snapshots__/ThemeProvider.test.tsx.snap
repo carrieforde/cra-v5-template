@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ThemeProvider should render the theme provider 1`] = `
+<DocumentFragment>
+  <p>
+    Theme
+  </p>
+</DocumentFragment>
+`;
